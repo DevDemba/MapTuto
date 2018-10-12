@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="container">
+        <h1>Posts</h1>
+
+        <div *ngIf= "undefined === items">loading...</div>
+
+        <div>
+          <ul>
+            <!-- <li *ngFor="let post of items['posts']" [innerHTML]="post.title"></li> -->
+            <li *ngFor="let post of items">{{post.title}}</li>
+          </ul>
+        </div>
+
+  </div>
+
+</div>
+
