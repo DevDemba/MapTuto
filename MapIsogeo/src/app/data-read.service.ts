@@ -11,4 +11,6 @@ import { DataViewComponent } from './data-view/data-view.component';
 export class DataReadService {
 
   constructor(private dataReadService: DataReadService ) { }
+  
 }
+

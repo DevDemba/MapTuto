@@ -12,10 +12,13 @@ import { map } from 'rxjs/operators';
 export class DataViewComponent implements OnInit {
 
   items: any[]=[];
-  itemsUrl = 'https://jsonplaceholder.typicode.com/posts';
+  itemsUrl = 'https://id.api.isogeo.com/oauth/authorize';
+  client = "isogeo-dashboard-bc2882676b2e4b93a8d68c26e12c60d0";
+  secretUrl ="kRS7psA05y8ZJ53zsyD5nCB0mRRygnfXa6DeEaFPZ0k6qBTVigxlqSFQwmSJzU5W";
+
+
 
   constructor(private http: HttpClient) { }
-
 
 
   ngOnInit() {
